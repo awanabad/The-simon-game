@@ -1,0 +1,136 @@
+/* HTML */
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  text-align: center;
+  background-color: #5A819E;
+  margin: 1% 3%;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #F6D55C;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #dededebe;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+/* Opening */
+
+.simon-text {
+  margin-top:31vh;
+  font-size: 6.3rem;
+  width: 350px;
+  transition: 0.3s;
+}
+
+.simon-text:hover {
+  margin-top:30.75vh;
+  font-size: 6.4rem;
+}
+
+.simon-punctuation {
+  transition: color 0.3s;
+}
+
+.simon-text:hover .simon-punctuation {
+  color: #F67E7D;
+}
+
+.simon-description {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  position: relative;
+  right: 5px;
+}
+/* Bounce Effect */
+.bounce {
+  animation: bounce 0.5s ease forwards;
+  }
+
+@keyframes bounce {
+    10% { transform:translateY(0%); }
+    20% { transform:translateY(-25%); }
+    30% { transform:translateY(0%); }
+    40% { transform:translateY(-11%); }
+    50% { transform:translateY(0%); }
+    60% { transform:translateY(-5%); }
+    100% { transform:translateY(0); }
+}
+
+/* Tutorial */
+.simon-instructions{
+  margin-top: 9.5%;
+  font-size: 1.65rem;
+  width: 45%;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  border: solid #dededebe 3px;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  position: relative;
+  right: 5px;
+  border-radius: 0%;
+}
+
+.button-pressed {
+  background-color: #ffffffda !important;
+  border-color: #D97F83;
+}
+
+
+.red { background-color: rgb(255, 83, 83);
+} 
+.green { background-color: rgb(99, 195, 77);} 
+
+.blue { background-color: rgb(94, 31, 241);
+} 
+.yellow { background-color: rgb(246, 211, 83);} 
+
+.red, .green {
+  margin-top: 45px;
+}
+
+/* Win and Loss Screens */
+.loss, .win {
+  margin-top: 75px;
+}
+.loss {
+  color: #dbdbdb;
+  margin-bottom: 100px;
+}
+
+.win {
+  color: #6bd972;
+}
+
+/* Level Text */
+
+.level-details {
+  margin-top: 35px;
+  font-size: 1.25rem;
+}

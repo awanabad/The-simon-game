@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>the simon. game</title>
+  <!--Bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--Fonts Awesome-->
+  <script src="https://kit.fontawesome.com/4edbcd99d6.js" crossorigin="anonymous"></script>
+  <!--GFonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--Opening-->
+  <div class="row">
+      <h1 class="simon-text">simon<span class="simon-punctuation">.</span></h1>
+      <p class="simon-description"></p>
+      <p class="simon-instructions">hey, it's me simon.</p>
+    </div>
+  </div>
+  <!--Buttons Div-->
+  <div class=buttons-div>
+    <div class="row">
+      <div id="red" type="button" class="button red"></div>
+      <div id="green" type="button" class="button green"></div>
+    </div>
+    <div class="row">
+      <div id="blue" type="button" class="button blue"></div>
+      <div id="yellow" type="button" class="button yellow"></div>
+    </div>
+  </div>
+  <!--Lose Screen-->
+  <div class=loss>
+      <div class="row">
+        <i class="fas fa-sad-tear fa-10x"></i>
+      </div>
+  </div>
+  <!--Level Details-->
+  <p class="level-details">press any key on your keyboard</p>
+    <!--Win Screen-->
+    <div class=win>
+      <div class="row">
+        <i class="fas fa-smile-wink fa-10x"></i>
+      </div>
+  </div>
+
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
